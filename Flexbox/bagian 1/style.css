@@ -6,11 +6,11 @@
     padding: 5px;
     box-sizing: border-box;
     display: flex;
-    /*flex-direction: row-reverse;*/
-    /*flex-wrap: wrap;*/
-    /* justify-content: center; */
-    /* align-items: baseline; */
-
+    /*flex-direction: row-reverse; mengatur urutan kotak*/
+    /*flex-wrap: wrap; ketika penuh kotak kebawah*/
+    /* justify-content: center; mengatur posisi kotak width*/
+    /* align-items: baseline; mengatur posisi kotak height */
+    /* align-content: center; mengatur lebih dari 1 baris */
 }
 
 .container div {
@@ -18,15 +18,17 @@
     margin: 2px;
     flex: 1;
 }
-
-.container div.dua {
+/* flex grow buat kotaknya sejajar meski ada kotak yang berubah */
+.container div.dua { 
     flex: 3;
+    height: 200px;
+    /* align-self: flex-start; mengatur aligment secara sendiri secara horizontal */
 }
 
 /* .satu {
     order: 3;
 }
-
+ order mengatur urutan kotak secara acak tergantung order
 .dua {
     order: 4;
 } */
