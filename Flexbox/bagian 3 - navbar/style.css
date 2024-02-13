@@ -13,12 +13,11 @@ nav {
     background-color: whitesmoke;
     justify-content: space-around;
     padding: 10px 0;
-    colo
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    width: 40%;
+    width: 40% ;
     justify-content: space-between;
 }
