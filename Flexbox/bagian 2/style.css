@@ -69,12 +69,66 @@ body {
 }
 
 .thumbnail {
-    width: 25%;
+    width: 50%;
 }
 
 .thumbnail img {
     width: 100%;
 }
+
+/* Latihan 4 */
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: salmon;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.card .header {
+    height: 150px;
+    background-color: brown;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Latihan 5 */
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid black;
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    color: white;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+}
+
 
 /* Responsive */
 @media( min-width: 600px ) {
