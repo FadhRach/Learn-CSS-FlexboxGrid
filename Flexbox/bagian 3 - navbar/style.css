@@ -1,18 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Teko',sans-serif;
 }
 
 /* Navbar */
 nav {
     display: flex;
-    background-color: whitesmoke;
+    background-color: black;
     justify-content: space-around;
     padding: 10px 0;
+    color: white;
+    height: 30px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
 }
 
 nav ul {
@@ -20,4 +31,66 @@ nav ul {
     list-style: none;
     width: 40% ;
     justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+
+/* Responsive Breakpoint*/
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+    nav ul {
+        display: none;
+    }
 }
